@@ -1,0 +1,162 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f4e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contact Form Container */
+  .contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Form Title */
+  .form-title {
+    text-align: start;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+  }
+  
+  /* Form Group */
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Labels */
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .radio-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .radio-wrap input{
+    margin-right: 12px;
+  }
+  .contact-form .form-group:nth-child(4) label{
+      margin-bottom: 12px;
+    }
+    .radio-wrap label{
+      margin-bottom: 0px !important;
+    }
+    .contact-form .form-group:nth-child(6){
+        display: flex;
+    }
+    .contact-form .form-group:nth-child(6) label{
+        margin-bottom: 0;
+    }
+    textarea{
+        height: 60px;
+        resize: none;
+    }
+  /* Error Message */
+  .error-message {
+    display: none;
+    font-size: 12px;
+    color: #d9534f;
+    margin-top: 5px;
+  }
+  .name-form{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  /* Radio Options */
+  .radio-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007e5e;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #006644;
+  }
+  
+  /* Form Success Message */
+  .form-success {
+    display: none;
+    margin-top: 15px;
+    text-align: center;
+    color: #28a745;
+  }
+  
+  /* Checkbox */
+  .form-group input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  /* Attribution */
+  .attribution {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+  }
+  
+  .attribution a {
+    color: #007e5e;
+    text-decoration: none;
+  }
+  
+  .attribution a:hover {
+    text-decoration: underline;
+  }
+  @media only screen and (max-width: 480px) {
+    .radio-options{
+        flex-direction: column;
+    }
+    .name-form{
+        flex-direction: column;
+        gap: 0;
+    }
+    textarea{
+        height: 120px;
+    }
+  }
